@@ -124,6 +124,7 @@ p, h1, h2, h3, h4, h5, h6 {
 /* ------------------------банер герой -----------------------------*/
 .hero{
   
+  background-color: var(--background-second-color);
   padding-top: 200px;
   padding-bottom: 200px;
  
@@ -131,8 +132,19 @@ p, h1, h2, h3, h4, h5, h6 {
   padding-right: 0px;
 
   margin-bottom: 94px;
-  background-color: var(--background-second-color); 
+  height:600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; 
+
+  background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)
+  ),
+  url(../images/foto-hero.jpeg)
+
 }
+
 
 
 .hero-baner {
@@ -200,9 +212,29 @@ height: 50px;
     }
     
 /* -------------------фишки компании-------------- */
-.mj{
-  margin-bottom: 94px;
+.item-box{
+display: flex;
+justify-content: center;
+margin-left: auto;
 }
+.marg{
+  margin-bottom: 30px;
+}
+.icon-items{
+ 
+width: 270px;
+height: 120px;
+border: 1px transpontant;
+
+background: #F5F4FA;
+border-radius: 4px;
+}
+
+.icon-items:not(:last-child){
+  margin-right: 30px;
+}
+
+
 .maim-section{
   display: flex;
   justify-content: center;
@@ -244,6 +276,7 @@ font-size: 14px;
 line-height: 1.7;
 color: #757575;
 text-transform: none;
+margin-bottom: 94px;
 }
 .maim-section{
 font-weight: bold;
@@ -281,10 +314,8 @@ line-height: 1.16;
 
   margin-left: -30px;
   margin-top: -30px;
-
   padding-bottom: 94px;
-  
- }
+  }
  
  .photo-stuf {
       flex-basis: ((100% - 4*30px)/4);
@@ -302,8 +333,11 @@ line-height: 1.16;
   padding-bottom: 50px ;
   
   }
-
-  
+.stuf-socials{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 .stuf-name {
   text-align: center;
   margin-top: 30px;
@@ -319,8 +353,64 @@ text-align: center;
 margin-bottom: 30px;
 font-size: 16px;
 line-height: 1.18;
-
+margin-bottom: 16px;
 }
+.social-item:not(:last-child){
+    margin-right: 10px;
+  }
+.social-item{
+  display: flex;
+  justify-content: center;
+}
+.icon-social{
+  fill: #AFB1B8;
+}
+.social-link{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.social-link:hover {
+
+  background: #2196F3;
+}
+/* -----------------------client------------------------------ */
+.client{
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+}
+.icon-pikchy{
+  margin: auto;
+width: 170px;
+height: 92px;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius: 4px;
+
+fill: #AFB1B8;
+
+display: flex;
+justify-content: center;
+margin: auto;
+}
+
+.icon-client{
+display: flex;
+justify-content: center;
+}
+
+.icon-pikchy:not(:last-child){
+  margin-right: 30px;
+}
+
+
 /* --------------------подвал--------------------*/
 
 .l-items{
@@ -476,4 +566,4 @@ margin-top: -30px;
   margin-top: 30px;
  }
 
- margin-bottom: 94px;
+ 
