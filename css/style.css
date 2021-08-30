@@ -315,6 +315,7 @@ line-height: 1.16;
   margin-left: -30px;
   margin-top: -30px;
   padding-bottom: 94px;
+  margin-bottom: 94px;
   }
  
  .photo-stuf {
@@ -385,9 +386,18 @@ font-weight: bold;
 font-size: 36px;
 line-height: 42px;
 text-align: center;
+margin-bottom: 50px;
 }
+ .icon-size{
+  
+ }
+
 .icon-pikchy{
-  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+margin: auto;
 width: 170px;
 height: 92px;
 border: 1px solid #AFB1B8;
@@ -395,18 +405,19 @@ box-sizing: border-box;
 border-radius: 4px;
 
 fill: #AFB1B8;
-
+/* 
 display: flex;
-justify-content: center;
+justify-content: center; */
 margin: auto;
 }
 
 .icon-client{
 display: flex;
 justify-content: center;
+margin-bottom: 94px;
 }
 
-.icon-pikchy:not(:last-child){
+.icon-size:not(:last-child){
   margin-right: 30px;
 }
 
