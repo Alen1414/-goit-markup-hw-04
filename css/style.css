@@ -32,6 +32,10 @@ p, h1, h2, h3, h4, h5, h6 {
 .site-nav .link:focus {
   color: #2196f3;
 }
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
 .site-nav .link.current {
   color: #2196f3;
 }
@@ -112,15 +116,31 @@ p, h1, h2, h3, h4, h5, h6 {
 
  .item-site {
       display: flex;
-      margin-left: 50px;
-      
-      }
+ }
       .item-color{
      color: #757575;
       }
       .active {
         color:  #2196F3;
         }
+        .icon-email{
+          display: flex;
+          margin-right: 10px;
+          fill:  #757575;
+        }
+        .icon-phone{
+          display: flex;
+          fill:  #757575;
+          margin-left: 30px;
+          margin-right: 10px;
+
+        }
+        .icon-phone:hover{
+        fill:  #2196F3;
+        }
+        .icon-email:hover{
+          fill:  #2196F3;
+          }
 /* ------------------------банер герой -----------------------------*/
 .hero{
   
@@ -209,6 +229,7 @@ height: 50px;
   .button-portfoli:hover{
     color: var(--white-color-text);
   background-color:var(--second-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     }
     
 /* -------------------фишки компании-------------- */
@@ -221,7 +242,7 @@ margin-left: auto;
   margin-bottom: 30px;
 }
 .icon-items{
- 
+padding: 25px 100px 25px 100px;
 width: 270px;
 height: 120px;
 border: 1px transpontant;
@@ -324,6 +345,7 @@ line-height: 1.16;
       margin-top: 30px;
       border-radius: 0px 0px 4px 4px;
       background: #FFFFFF;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   }
   
   .title-stuf{
@@ -393,9 +415,10 @@ margin-bottom: 50px;
  }
 
 .icon-pikchy{
+  padding: 16px 32px 16px 32px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  
   
 margin: auto;
 width: 170px;
@@ -405,9 +428,6 @@ box-sizing: border-box;
 border-radius: 4px;
 
 fill: #AFB1B8;
-/* 
-display: flex;
-justify-content: center; */
 margin: auto;
 }
 
@@ -420,14 +440,24 @@ margin-bottom: 94px;
 .icon-size:not(:last-child){
   margin-right: 30px;
 }
-
+.icon-pikchy:hover{
+ fill:  #2196F3;
+ border-color: #2196F3;
+ }
+ 
 
 /* --------------------подвал--------------------*/
+.jeneral-box{
+display: flex;
+}
+.box-one{
+display: flex;
+flex-direction: column;
+}
 
 .l-items{
   display: block;
- 
-}
+ }
 
 .address-items{
   display: block;
@@ -472,6 +502,44 @@ color: rgba(255, 255, 255, 0.6);
 .studio-white{
   color: var(--white-color-text);
 }
+.box-second{
+display: flex;
+flex-direction: column;
+margin-left: 156px;
+}
+.footer-text{
+
+margin-bottom: 20px;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+}
+.footer-box{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.footer-box:hover {
+ background: #2196F3;
+}
+.icon-footer{
+  margin-left: 156px;
+}
+.footer-list{
+display: flex;
+
+}
 
 /* --------------------paje portfolio--------------------*/
 
@@ -482,9 +550,11 @@ color: rgba(255, 255, 255, 0.6);
 .card{
   
 background: #FFFFFF;
-  outline: 1px solid #EEEEEE;
-  box-sizing: border-box;
-
+outline: 1px solid #EEEEEE;
+box-sizing: border-box;
+}
+.card:hover{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .card-set-button{
   display: flex;
@@ -509,14 +579,13 @@ cursor: pointer;
 background-color: #F5F4FA;
 border-radius: 4px;
 border: 1px solid transparent;
+
 }
 
 
 .button-all{
   width: 73px;
-  
-
-}
+  }
 .button-veb {
     width: 128px;
  
