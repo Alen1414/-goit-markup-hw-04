@@ -124,12 +124,11 @@ p, h1, h2, h3, h4, h5, h6 {
         color:  #2196F3;
         }
         .icon-email{
-          display: flex;
           margin-right: 10px;
           fill:  #757575;
         }
         .icon-phone{
-          display: flex;
+
           fill:  #757575;
           margin-left: 30px;
           margin-right: 10px;
@@ -138,9 +137,9 @@ p, h1, h2, h3, h4, h5, h6 {
         .icon-phone:hover{
         fill:  #2196F3;
         }
-        .icon-email:hover{
+       /* :hover{
           fill:  #2196F3;
-          }
+          } */
 /* ------------------------банер герой -----------------------------*/
 .hero{
   
@@ -398,7 +397,7 @@ margin-bottom: 16px;
   background-color: #FFFFFF;
 }
 .social-link:hover {
-
+  fill:  #FFFFFF;
   background: #2196F3;
 }
 /* -----------------------client------------------------------ */
@@ -418,7 +417,6 @@ margin-bottom: 50px;
   padding: 16px 32px 16px 32px;
   display: flex;
   align-items: flex-start;
-  
   
 margin: auto;
 width: 170px;
