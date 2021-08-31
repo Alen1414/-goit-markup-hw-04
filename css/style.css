@@ -125,11 +125,11 @@ p, h1, h2, h3, h4, h5, h6 {
         }
         .icon-email{
           margin-right: 10px;
-          fill:  #757575;
+          fill: currentColor;
         }
         .icon-phone{
 
-          fill:  #757575;
+          fill:  currentColor;
           margin-left: 30px;
           margin-right: 10px;
 
@@ -385,7 +385,7 @@ margin-bottom: 16px;
   justify-content: center;
 }
 .icon-social{
-  fill: #AFB1B8;
+  fill: currentColor;;
 }
 .social-link{
   width: 44px;
@@ -395,9 +395,10 @@ margin-bottom: 16px;
   justify-content: center;
   border-radius: 50%;
   background-color: #FFFFFF;
+  color: #AFB1B8;
 }
 .social-link:hover {
-  fill:  #FFFFFF;
+color:  #FFFFFF;
   background: #2196F3;
 }
 /* -----------------------client------------------------------ */
@@ -518,6 +519,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 }
 .footer-box{
+  color: var(--white-color-text);
   width: 44px;
   height: 44px;
   display: flex;
@@ -529,6 +531,7 @@ color: #FFFFFF;
 
 
 .footer-box:hover {
+  color: var(--white-color-text);
  background: #2196F3;
 }
 .icon-footer{
